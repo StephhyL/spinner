@@ -1,39 +1,51 @@
 
-setTimeout(() => {
-  process.stdout.write('\r|      ');
-}, 100);
+const arrSymbols = ['\r|      ', '\r/       ','\r-       ','\r\\       ', '\r|      ', '\r/       ','\r-       ','\r\\       ', '\r|      \n']
 
-setTimeout(() => {
-  process.stdout.write('\r/       ');
-}, 300);
+let delay = 100;
+arrSymbols.forEach(symbol => {
+  setTimeout(() => {
+    process.stdout.write(symbol);
+  }, delay);
+  delay += 200
+});
 
-setTimeout(() => {
-  process.stdout.write('\r-       ');
-}, 500);
 
-setTimeout(() => {
-  process.stdout.write('\r\\       ');
-}, 700);
 
-setTimeout(() => {
-  process.stdout.write('\r|       ');
-}, 900);
+// setTimeout(() => {
+//   process.stdout.write('\r|      ');
+// }, 100);
 
-setTimeout(() => {
-  process.stdout.write('\r/       ');
-}, 1100);
+// setTimeout(() => {
+//   process.stdout.write('\r/       ');
+// }, 300);
 
-setTimeout(() => {
-  process.stdout.write('\r-       ');
-}, 1300);
+// setTimeout(() => {
+//   process.stdout.write('\r-       ');
+// }, 500);
 
-setTimeout(() => {
-  process.stdout.write('\r\\       ');
-}, 1500);
+// setTimeout(() => {
+//   process.stdout.write('\r\\       ');
+// }, 700);
 
-setTimeout(() => {
-  process.stdout.write('\r|       \n');
-}, 1700);
+// setTimeout(() => {
+//   process.stdout.write('\r|       ');
+// }, 900);
+
+// setTimeout(() => {
+//   process.stdout.write('\r/       ');
+// }, 1100);
+
+// setTimeout(() => {
+//   process.stdout.write('\r-       ');
+// }, 1300);
+
+// setTimeout(() => {
+//   process.stdout.write('\r\\       ');
+// }, 1500);
+
+// setTimeout(() => {
+//   process.stdout.write('\r|       \n');
+// }, 1700);
 
 
 //process.stdout.write("hello from spinner1.js... \rheyyy\n");
